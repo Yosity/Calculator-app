@@ -1,29 +1,32 @@
-import React, {useState} from 'react'
+import React, { useState} from 'react'
 import "./App.css"
+
+
 let App = () =>{
 
     // Toggle logic
-    let [state,setState] = useState("dark");
-    let circle = document.getElementById("circle");
-    let moveCircle = () =>{
-        console.log("entered")
-        switch(state){
-            case "dark":
-                circle.style.transform = "translate(20px)";
-                setState("light");
-                return;
-            case "light":
-                circle.style.transform = "translate(39px)";
-                setState("purple");
-                return;
-            case "purple":
-                circle.style.transform = "translate(0px)";
-                setState("dark");
-                return;
-            default:
-                return;
-        }
-    }
+    // let circle = document.getElementById("circle");
+    // let [state,setState] = useState("dark");
+
+    // let moveCircle = () =>{
+    //     console.log("entered");
+    //     switch(state){
+    //         case "dark":
+    //             circle.style.transform = "translate(20px)";
+    //             setState("light");
+    //             return;
+    //         case "light":
+    //             circle.style.transform = "translate(39px)";
+    //             setState("purple");
+    //             return;
+    //         case "purple":
+    //             circle.style.transform = "translate(0px)";
+    //             setState("dark");
+    //             return;
+    //         default:
+    //             return;
+    //     }
+    // }
 
 
 
@@ -67,8 +70,8 @@ let App = () =>{
     }
     let resetScreen = () =>{
         setCurrentNum("");
-        setOperator("")
-        setPrevNum("")
+        setOperator("");
+        setPrevNum("");
     }
     let showResult = () =>{
         let temp = prevNum+operator+currentNum;
@@ -83,9 +86,9 @@ let App = () =>{
     return (
         <div>
            <header>
-            <p>calc</p>
+            <p>calculator</p>
             <div id='theme'>
-                <span>THEME</span>
+                 {/* <span>THEME</span>
                 <div className="toggle">
                     <div id='toggle-id'>
                         <div id='dark'>1</div>
@@ -95,7 +98,7 @@ let App = () =>{
                     <div id='slider' role= "button" onClick={() => {moveCircle()}}>
                         <div id='circle'></div>
                     </div>
-                </div>
+                </div>  */}
                 
             </div>
            </header>

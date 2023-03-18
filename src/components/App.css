@@ -18,23 +18,23 @@ header{
 header p {
     font-size: 1.6rem;
 }
-header #theme{
+/* header #theme{
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-#theme span{
+} */
+/* #theme span{
     font-size: 0.9rem;
-}
-#toggle-id{
+} */
+/* #toggle-id{
     font-size: 10px;
     width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: 3px;
-}
- #slider{
+} */
+ /* #slider{
     width: 50px;
      display: flex;
     justify-content: start;
@@ -52,7 +52,7 @@ header #theme{
     background-color: orange;
     border-radius: 50%;
     transition: transform 0.2s ease-out;
-  }
+  } */
 
 .screen{
     position: relative;
