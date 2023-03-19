@@ -62,8 +62,9 @@ let App = () =>{
             }
             if(currentNum.length === 1 && currentNum === "0" && value!== ".")
                 setCurrentNum(value)
-            else   
-                setCurrentNum(currentNum + value)
+            else
+                setCurrentNum(currentNum + value);
+               
     }
     let deleteNum = () =>{
         setCurrentNum(currentNum.slice(0,-1));
@@ -105,10 +106,10 @@ let App = () =>{
            <main>
             <div className="screen">
             <div id='prev-exp'>
-                {prevNum}
+                {prevNum ? Number(prevNum).toLocaleString("en-US") : ""}
                 <div id='operator'>{operator}</div>
             </div>
-           <div id = "current-exp">{currentNum}</div>
+           <div id = "current-exp">{Number(currentNum).toLocaleString("en-US")}</div>
            </div>
             <div className="numbers-container">
                 <button onClick={ ()=>{ updateScreen("7")}} >7</button>
